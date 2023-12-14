@@ -1,0 +1,102 @@
+.box{
+    border-radius: 1rem;
+    height: 100px;
+    width: 100px;
+    color:red;
+    font-size:50px;
+    background-color: pink;
+    
+}
+
+
+
+
+.box:hover,.noTrans{
+    transform:scale(1.1)
+}
+#board{
+    position: absolute;
+    height:320px;
+    width:400px;
+    background-color: rgb(233, 233, 144);
+    left:40vw;
+    z-index:4;
+    border-radius: 1rem;
+    border: 2px solid black;
+    visibility:hidden;
+    font-size:2rem;
+    
+    
+}
+
+div{
+    
+    flex-wrap: wrap;
+    height: 350px;
+    width:310px;
+    display: flex;
+    gap:10px;
+    flex-direction: column;
+    justify-content: center;
+     align-items:center;    
+     transform: scale(2);
+     
+
+       
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+    font-family:Arial, Helvetica, sans-serif;
+
+    
+}
+body{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100vw;
+    height: 100vh;    text-align: center;   
+    background-color: aquamarine;  
+}
+.edge{
+    margin: 30vmin;
+    background-color:rgb(108, 166, 243);
+    height: 3rem;
+    width: 8rem;
+    font-size: 2rem;
+    border-radius: 7px;
+    transition-duration:0.1s;
+    border:2px solid  black;
+}
+h1{
+    position: absolute;
+    top:3rem;
+    font-weight: 890;
+    left: 40.5vw;
+    background-color:blueviolet;
+    border-radius: 0.5rem;
+    border: 2px solid black; 
+    width: 400px;
+    justify-content: center; align-items: center; display: flex;
+    height:70px;
+    color:white;
+}
+h1:hover{transform:scale(1.1)}
+.edge:hover{
+background:rgb(90, 130, 214);    transform: scale(1.5);
+
+}
+.edge:active{
+    background-color: rgb(25, 25, 221);
+   
+}
+.meme{
+    background-image: url("pxfuel.jpg");
+}
+a{
+    text-decoration: none;
+    color:black;
+}
