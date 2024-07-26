@@ -1,6 +1,8 @@
 let boxes = document.querySelectorAll(".box")
 let reset = document.querySelector(".reset");
 let turnO =true;
+let header = document.querySelector("#header");
+ 
 
 let winList= [
     [0,1,2],
@@ -21,10 +23,14 @@ let winList= [
 boxes.forEach((box)=>{
     box.addEventListener('click', ()=>{
         if(turnO){
+        header.innerText = "Player X";
+        console.log("Player O");
         box.innerText ="O";
         turnO =false; 
     }
     else{
+        header.innerText = "Player O";
+        console.log("Player X");
         box.innerText ="X"
         turnO =true;
       
